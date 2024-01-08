@@ -67,10 +67,11 @@ button{
 .textImageDiv{
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
 }
 
 .textDiv{
-    width: 60%;
+    width: 35%;
 }
 .textDiv h1{
     font-size: 3rem;
@@ -78,7 +79,7 @@ button{
     font-weight: bolder;
 }
 .textDiv h4{
-    font-size: 1.5rem;
+    font-size: .9rem;
     color: grey;
     font-weight: normal;
    
@@ -90,6 +91,7 @@ button{
 }
 .imgDiv{
     overflow: hidden;
+    margin-left: 80px;
 }
 .bodySection{
     background-color: grey;
