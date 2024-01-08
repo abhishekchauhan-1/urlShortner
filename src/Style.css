@@ -1,0 +1,180 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+.navbar-container{
+    margin-left: 80px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+   
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+}
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-links ul li a{
+    
+    text-decoration: none;
+    color: grey;
+    margin-left: 25px;
+    
+    
+}
+button{
+    height: 35px;
+    min-width: 110px;
+    margin-top: 15px;
+    margin-left: 54%;
+    font-family: 'Poppins',sans-serif;
+    background-color: cyan;
+    font-weight: 400;
+    font-size: 13px;
+    border: none;
+    border-radius: 18px;
+}
+
+.textImageDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.textDiv{
+    width: 60%;
+}
+.textDiv h1{
+    font-size: 3rem;
+    margin-top: 55px;
+    font-weight: bolder;
+}
+.textDiv h4{
+    font-size: 1rem;
+    word-spacing: 1px;
+    color: grey;
+    font-weight: normal;
+}
+.textButton{
+    margin-left: 0;
+    margin-top: 20px;
+   background-color: #00FFFF;
+}
+.imgDiv{
+    overflow: hidden;
+}
+.bodySection{
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+
+
+    .header{
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+       
+    }
+    .logo{
+        margin-left: 25px;
+    }
+    .navbar {
+        flex-direction: row;
+        height: auto;
+        margin-top: 10px;
+        
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 15px;
+        display: none;
+    }
+
+    .nav-links ul li a {
+        margin: 5px 0;
+        display: none;
+    }
+
+    button {
+        min-width: 100px;
+        margin-left: 90px;
+        margin-top: 8px;
+    }
+
+    .textImageDiv{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textDiv {
+        width: 100%;
+    }
+
+    .textDiv h1{
+        font-size: 2.5rem;
+        margin-top: 55px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .textDiv h4{
+        font-size: 1rem;
+        word-spacing: 1px;
+        color: grey;
+        font-weight: normal;
+        text-align: center;
+        margin: 10px;
+        
+    }
+    .imgDiv img{
+        height: 320px;
+        width: 400px;
+        margin-top: 40px;
+        margin-left: 20px;
+        
+    }
+    .navbar-container{
+        margin-left: 0;
+    }
+
+    .textButton{
+       margin-left: 100px;
+        margin-top: 20px;
+       background-color: #00FFFF;
+       width: 200px;
+    }
+
+}
