@@ -25,7 +25,7 @@ function HomePage() {
             </div>
             <div className="textImageDiv">
               <div className="textDiv">
-                <h1>More Than Just Shorter Links</h1>
+                <h1>More Than Just <br/>Shorter Links</h1>
                 <h4>
                   Build your brand’s recognition and get detailed insights on
                   how your links are performing.

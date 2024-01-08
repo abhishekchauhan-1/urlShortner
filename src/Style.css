@@ -78,10 +78,10 @@ button{
     font-weight: bolder;
 }
 .textDiv h4{
-    font-size: 1rem;
-    word-spacing: 1px;
+    font-size: 1.5rem;
     color: grey;
     font-weight: normal;
+   
 }
 .textButton{
     margin-left: 0;
@@ -171,7 +171,7 @@ button{
     }
 
     .textButton{
-       margin-left: 100px;
+       margin-left: 90px;
         margin-top: 20px;
        background-color: #00FFFF;
        width: 200px;
