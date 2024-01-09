@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+Certainly! Below is a README template for your project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Shortly URL Shortener
 
-## Available Scripts
+Shortly is a URL shortening service that allows users to create short aliases for long URLs. This project consists of a React frontend with user authentication and link management features.
 
-In the project directory, you can run:
+## Table of Contents
+- [Frontend Repository](#frontend-repository)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [Homepage](#homepage)
+  - [After Login](#after-login)
+  - [Login](#login)
+- [Backend Repository](#backend-repository)
+- [Author](#author)
+- [License](#license)
 
-### `npm start`
+## Frontend Repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The frontend of Shortly is built with React and uses React Router for navigation. The repository for the frontend can be found [here](https://github.com/abhishekchauhan-1/urlShortner-frontend).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
+- Node.js and npm installed on your machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
+1. Clone the frontend repository:
+   ```bash
+   git clone https://github.com/abhishekchauhan-1/urlShortner-frontend.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
+   ```bash
+   cd urlShortner-frontend
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the application:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+### Homepage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The homepage provides options for user registration, login, and link shortening. Users can create short URLs for long links and view analytics for the created URLs.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### After Login
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+After logging in, users can access additional features, such as viewing statistics for the URLs they have created.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Login
 
-## Learn More
+The login page allows users to authenticate themselves using their credentials.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Backend Repository
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The backend of Shortly is responsible for user authentication and link management. The repository for the backend can be found [here](https://github.com/abhishekchauhan-1/BackendUrlShortner).
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Abhishek Singh Chauhan
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the [MIT License](LICENSE).
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize this README according to your specific project details.

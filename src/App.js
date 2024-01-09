@@ -31,7 +31,6 @@ console.log(info);
 
        )}
         
-      
         <Route path="/login" element={<Login setmyData={setmyData}  setLogin={setLogin}/>} />
       </Routes>
     </Router>
