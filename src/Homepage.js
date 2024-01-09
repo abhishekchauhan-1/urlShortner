@@ -1,7 +1,17 @@
+import React,{useState} from "react";
 import "./Style.css";
 import backGroundImg from "./assets/illustration-working.svg";
+import SignUp from "./SignUp";
+import Login from "./Login";
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
+
+  const [showModal,setShowModal] =   useState(false);
+  const [loginModal,setLoginModal] = useState(false);
+  const navigate = useNavigate();
+  const closeModal = ()=>setShowModal(false);
+
   return (
     <>
       <div className="container">
@@ -21,7 +31,8 @@ function HomePage() {
                   </li>
                 </ul>
               </div>
-              <button>Get Started</button>
+              <button onClick={()=>{navigate('/login')}}>Login</button>
+              
             </div>
             <div className="textImageDiv">
               <div className="textDiv">
@@ -30,7 +41,8 @@ function HomePage() {
                   Build your brand’s recognition and get detailed insights on
                   how your links are performing.
                 </h4>
-                <button className="textButton">Get Started</button>
+                <button className="textButton" onClick={()=>setShowModal(true)}>Get Started</button>
+                {showModal && <SignUp closeModal = {closeModal}/>}
               </div>
               <div className="imgDiv">
                 <img src={backGroundImg} alt="background Image" />

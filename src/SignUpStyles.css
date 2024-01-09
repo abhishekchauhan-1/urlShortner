@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signupdiv{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(189, 189, 189, 0.9);
+    
+}
+.SignupForm{
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    background-color: darkviolet;
+    height: 250px;
+    width: 450px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input{
+    border: none;
+    background: none;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
+   
+}
+
+input::placeholder {
+    color: white;
+    font-weight: normal;
+    margin-left: 30px;
+  }
+  
