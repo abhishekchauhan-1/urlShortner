@@ -37,14 +37,30 @@ input{
     background: none;
     font-family: 'Poppins';
     font-weight: bold;
-    color: white;
     margin-left: 30px;
    
 }
 
 input::placeholder {
-    color: white;
     font-weight: normal;
     margin-left: 30px;
   }
-  
+  @media only screen and (max-width: 600px) {
+    .SignupForm {
+        width: 80%; 
+        left: 10%; 
+    }
+
+    label {
+        font-size: 18px; 
+        margin-left: 20px;
+    }
+
+    input {
+        margin-left: 20px; 
+    }
+
+    input::placeholder {
+        margin-left: 20px; 
+    }
+}

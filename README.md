@@ -1,5 +1,4 @@
 
-
 # Shortly URL Shortener
 
 Shortly is a URL shortening service that allows users to create short aliases for long URLs. This project consists of a React frontend with user authentication and link management features.

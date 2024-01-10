@@ -7,13 +7,12 @@ const AfterLogin = ({ mydata, setLogin, login }) => {
   const [shortenLink, setShortenLink] = useState(null);
   const [loading, setLoading] = useState(true);
   const [originalURL, setOriginalURL] = useState("");
-  const [isCopied, setIsCopied] = useState(false); 
+  const [isCopied, setIsCopied] = useState(false);
   
   const userName = localStorage.getItem("name");
 
-
-
   const navigate = useNavigate();
+
   const fetchShortenLink = async () => {
     try {
       const response = await fetch("https://url-4s79.onrender.com/link/shorten", {
@@ -79,19 +78,18 @@ const AfterLogin = ({ mydata, setLogin, login }) => {
     fetchShortenLink();
   };
 
-  const handleCopyClick = () => {
-    const copyText = document.createElement("textarea");
-    copyText.value = shortenLink;
-    document.body.appendChild(copyText);
-    copyText.select();
-    document.execCommand("copy");
-    document.body.removeChild(copyText);
+  const handleCopyClick = async () => {
+    try {
+      await navigator.clipboard.writeText(shortenLink);
+      setIsCopied(true);
 
-    setIsCopied(true);
-
-    setTimeout(() => {
-      setIsCopied(false);
-    }, 2000);
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 2000);
+    } catch (error) {
+      console.error('Failed to copy to clipboard:', error);
+      // Handle error if clipboard copy fails
+    }
   };
 
   const handleLogOut = () => {
@@ -110,12 +108,9 @@ const AfterLogin = ({ mydata, setLogin, login }) => {
           </div>
           <div className="dashboard">
             <h3>{userName}</h3>
-
           </div>
           <div className="name">
-          
-              <h3 onClick={handleLogOut} style={{cursor:"pointer"}}>LogOut</h3>
-            
+            <h3 onClick={handleLogOut} style={{cursor:"pointer"}}>LogOut</h3>
           </div>
         </div>
       </div>
@@ -150,24 +145,28 @@ const AfterLogin = ({ mydata, setLogin, login }) => {
               <button type="submit">Create Short URL</button>
             </form>
           </div>
+          
           {shortenLink && (
             <div className="shortlink">
-              <h3>{shortenLink}</h3>
+              <div className="shorth5">
+                <h5>{shortenLink}</h5>
+              </div>
               <button onClick={handleCopyClick}>Copy</button>
               {isCopied && <span className="tooltip">Copied!</span>}
             </div>
           )}
+
           <div>
             {urlsData.allUrls.map((url, index) => (
               <div key={index} className="generatedURls">
                 <div className="generatedShort">
-                    <h3>Short URL</h3>
+                  <h3>Short URL</h3>
                   <p>{url.shortenedURL}</p>
                   <h3>OriginalURL</h3>
                   <p>{url.originalURL}</p>
                 </div>
                 <div className="visits">
-                    <h3>Total Visits</h3>
+                  <h3>Total Visits</h3>
                   <p>{url.visits}</p>
                 </div>
               </div>
